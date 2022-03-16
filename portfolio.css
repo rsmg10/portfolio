@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,100;1,500&display=swap");
+body {
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 234, 197);
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  margin: 10px 0px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 200;
+  margin: 10px 0px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+p {
+  margin: 0px;
+  font-size: 20px;
+}
+a {
+  color: rgb(250, 26, 146);
+  font-size: 20px;
+  text-decoration: none;
+}
+.dark a {
+  color: gold;
+}
+
+.switch {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(92, 166, 223);
+  position: relative;
+}
+
+.flicker {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.5s;
+  box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+    inset -4px -4px 6px rgba(123 121 126 / 90%);
+}
+
+.dark {
+  background-color: rgb(51, 47, 47);
+  transition: 0.3s;
+}
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+.dark .flicker {
+  transform: translateX(40px);
+}
+.dark > * {
+  color: whitesmoke;
+}
+
+.main {
+  height: 80vh;
+  /* background-color: rgb(42, 165, 165); */
+}
+
+.mainText {
+  width: 50%;
+  padding: 30px;
+}
+
+.square {
+  width: 98%;
+  margin: 1%;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.dark .square {
+  background-color: rgb(71, 71, 71);
+}
+
+.subSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 100px 30px;
+  background-color: rgb(121, 116, 116);
+}
+.dark footer {
+  background-color: black;
+}
+@media only screen and (min-width: 970px) {
+  .square {
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+  }
+}
